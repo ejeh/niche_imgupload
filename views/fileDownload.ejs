@@ -1,0 +1,30 @@
+<h1>This is the files page</h1>
+
+<form action="/items3/<%=id/filename%>" method="GET">
+    <% image.forEach(function(data){ %>
+        <div>
+
+            <img src="/image/<%= data.filename%>" alt="node">
+
+
+
+        </div>
+        <% }); %>
+
+</form>
+
+
+
+<!-- 
+        <% for(let i = 0; i < files.length; i++){%>
+
+            <%= files[i].filename %>
+                <br>
+                <td>
+                    <br>
+                    <tr>
+                        <a href="/download/<%= files[i].filename %>" download="files">Download Files</a>
+                    </tr>
+                </td>
+
+                <% }; %> -->

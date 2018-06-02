@@ -1,0 +1,93 @@
+======================================================================
+ALL USER SIGNUP
+======================================================================
+Method: POST
+
+navigate to url:
+
+https://niche-vendor.herokuapp.com/register
+
+Field entry format below
+
+
+{
+  	 "email": "",		//required and most be unique
+  	"password": "",		//required 
+ 	 "access": "",		//required and most be unique
+
+	please note: access has 3 option "vendor","courier","costumer"
+}
+
+If success recieve:
+---------------------------------------------------------------------
+{
+  
+	 "status": 200,
+   
+	"message": "User created",
+
+	"email": "email",
+
+    	"access": "access"
+
+}
+
+
+Example of success
+{
+  
+	 "status": 200,
+   
+	"message": "User created",
+
+	"email": "swam123456@gmail.com",
+
+    	"access": "vendor"
+
+}
+If failed recieve:
+---------------------------------------------------------------------
+status: 400,
+message: "Sorry your registration has failed",
+err: err
+
+
+=====================================================================
+LOGIN:
+=====================================================================
+Method: POST
+Navigate to url:
+https://niche-vendor.herokuapp.com/register
+
+Field entry format:
+{
+"email": "",		//Required
+"password":""		//Required
+
+}
+
+if success recieve:
+---------------------------------------------------------------------
+
+If user is vendor
+status: 201,
+message: "hi vendor"
+email: email
+
+If user is costumer
+status: 202,
+message: "record found"
+email:email
+
+
+If user is courier
+status: 203,
+message: "record found"
+email:email
+
+if failed recieve:
+---------------------------------------------------------------------
+status: 404, 
+message: "Please check the provided data and try again",
+err: err
+

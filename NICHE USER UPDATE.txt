@@ -1,0 +1,55 @@
+======================================================================
+ALL USER UPDATE
+======================================================================
+Method: POST
+
+
+Field entry format below
+
+
+{
+  	 "email": "",		
+  	"firstname": "",		
+ 	"lastname": "",	
+	"phonenumber": "",
+	"address": "",	
+	please note: access has 3 option "vendor","courier","costumer"
+}
+
+If success recieve:
+---------------------------------------------------------------------
+{
+  
+	 "status": 200,
+   
+	"message": "Successfully updated User",
+
+
+}
+
+
+Example of success
+{
+  
+	 "status": 200,
+   
+	"message": "User Updated",
+
+	"email": "swam123456@gmail.com",
+
+    "firstName": "jason ",
+
+	"lastName": "smith",
+
+	"phoneNumber": "09077772345",
+
+	"address": "Alhaji Gidan Mangoro Close beside yan shanu"
+
+}
+If failed recieve:
+---------------------------------------------------------------------
+status: 400,
+message: "User Update Failed try again",
+err: err
+
+
